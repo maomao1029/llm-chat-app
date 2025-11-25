@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 对话助手</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>🤖 AI 智能助手</h2>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <!-- 消息会动态插入到这里 -->
+            <div class="message ai-message">你好！我是你的 AI 助手，有什么可以帮你的吗？</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="输入你的问题..." onkeydown="handleKeyPress(event)">
+            <button onclick="sendMessage()" id="send-btn">发送</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
